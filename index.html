@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter on sports and technology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <h1>By Peter Kildegaard</h1>
+                <p class="tagline">Exploring ideas at the intersection of sports & technology</p>
+                <nav>
+                    <button class="nav-toggle" data-target="about">About</button>
+                    <div class="nav-content" id="about">
+                        <p>I'm Peter. I've been a senior AI product manager, national coach, and national championship medalist in six sports.</p>
+
+                        <p>I'm exploring ideas at the intersection of technology and sports. This site is where I share what I'm learning along the way.</p>
+                    </div>
+
+                    <button class="nav-toggle" data-target="contact">Contact</button>
+                    <div class="nav-content" id="contact">
+                        <p>You can reach me at <a href="mailto:kildegaardp@gmail.com">kildegaardp@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/kildegaardp/" target="_blank">LinkedIn</a>.</p>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Right Column -->
+        <main class="main-content">
+            <div class="main-content-inner">
+                <div class="articles-list">
+                    <article class="article-item">
+                        <div class="article-date">January 12, 2026</div>
+                        <h2><a href="articles/coaching-intelligence.html">When Coaching Intelligence Dies - The Conversion Problem</a></h2>
+                        <p>Coaching effectiveness is often limited by a "conversion problem" where critical insights evaporate before they can influence player behavior. This article explores why coaching intelligence stays trapped in the mind and how a lack of systems prevents observations from becoming lasting development.</p>
+                    </article>
+
+                    <article class="article-item">
+                        <div class="article-date">December 28, 2025</div>
+                        <h2><a href="articles/digital-products-athletes.html">Building Digital Products for Athletes</a></h2>
+                        <p>Lessons learned from designing tools that help athletes train smarter and achieve their goals. What does it take to build technology that truly serves the needs of competitive athletes, from weekend warriors to professionals?</p>
+                    </article>
+
+                    <article class="article-item">
+                        <div class="article-date">December 15, 2025</div>
+                        <h2><a href="articles/community-competition.html">The Intersection of Community and Competition</a></h2>
+                        <p>How technology can foster community while preserving the essence of competitive sports. In an increasingly digital world, the challenge is to build platforms that enhance connection without diminishing the authenticity of competition.</p>
+                    </article>
+
+                    <article class="article-item">
+                        <div class="article-date">November 30, 2025</div>
+                        <h2><a href="articles/performance-metrics.html">Performance Metrics That Actually Matter</a></h2>
+                        <p>Not all data points are created equal. A deep dive into which performance metrics provide genuine insight versus those that simply create noise. How do we separate signal from distraction in an era of endless quantification?</p>
+                    </article>
+
+                    <article class="article-item">
+                        <div class="article-date">November 18, 2025</div>
+                        <h2><a href="articles/athlete-mindset.html">Designing for the Athlete's Mindset</a></h2>
+                        <p>Understanding the psychology of athletes and competitors to build better products. What makes an athlete tick, and how can technology support both their physical and mental game without getting in the way?</p>
+                    </article>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.nav-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+
+                // Toggle active class
+                content.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
