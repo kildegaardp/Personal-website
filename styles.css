@@ -9,6 +9,7 @@
     --glass-border: rgba(255, 255, 255, 0.4);
     --border-light: rgba(0, 0, 0, 0.08);
     --spacing-xs: 8px;
+    --spacing-12px: 12px;
     --spacing-sm: 16px;
     --spacing-md: 24px;
     --spacing-lg: 32px;
@@ -62,14 +63,14 @@ body {
 /* Profile image and title layout */
 .title-section {
     display: flex;
-    align-items: flex-start;
-    gap: var(--spacing-sm); /* 16px gap */
+    align-items: center;
+    gap: var(--spacing-12px);
     margin-bottom: var(--spacing-md);
 }
 
 .profile-image {
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
     border-radius: 8px;
     flex-shrink: 0;
     object-fit: cover;
@@ -291,17 +292,12 @@ body {
     }
 
     .sidebar h1 {
-        font-size: 44px;
+        font-size: 38px;
     }
 
     .profile-image {
-        width: 44px;
-        height: 44px;
-    }
-
-    .sidebar nav {
-        flex-direction: row;
-        gap: var(--spacing-md);
+        width: 28px;
+        height: 28px;
     }
 
     .main-content {
@@ -325,12 +321,12 @@ body {
 
 @media (max-width: 640px) {
     .sidebar h1 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .profile-image {
-        width: 40px;
-        height: 40px;
+        width: 24px;
+        height: 24px;
     }
 
     .main-content {
