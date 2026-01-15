@@ -97,7 +97,7 @@ body {
 .sidebar nav {
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Fixed: Reduced gap between About and Contact */
+    gap: var(--spacing-12px); /* Fixed: Reduced gap between About and Contact */
 }
 
 /* Navigation Toggle Buttons (Fixed: Minimal text-only style) */
